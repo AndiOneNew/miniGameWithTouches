@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MiniGamesCircleView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Grs-an-0ux" customClass="MyCustomView" customModule="MiniGamesCircleView" customModuleProvider="target">
+                                <rect key="frame" x="87" y="309" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cdR-IP-Lll" appends="YES" id="ARE-5d-yPf"/>
+                                </connections>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Z8-vd-Zh1" customClass="MyCustomView" customModule="MiniGamesCircleView" customModuleProvider="target">
+                                <rect key="frame" x="42" y="494" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Flx-OB-IiT" appends="YES" id="DwJ-3q-ZKO"/>
+                                </connections>
+                            </view>
+                            <view tag="7" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zC-Az-ZFW" customClass="MyCustomView" customModule="MiniGamesCircleView" customModuleProvider="target">
+                                <rect key="frame" x="183" y="615" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uMu-QX-6QH" appends="YES" id="1Gl-I5-tzx"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O43-FS-sPU" customClass="MyCustomView" customModule="MiniGamesCircleView" customModuleProvider="target">
+                                <rect key="frame" x="296" y="492" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Dgt-av-1rd" appends="YES" id="Qoy-3q-7pr"/>
+                                </connections>
+                            </view>
+                            <view tag="5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jp4-Na-xmI" customClass="MyCustomView" customModule="MiniGamesCircleView" customModuleProvider="target">
+                                <rect key="frame" x="168" y="499" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0cT-Ax-UDv" appends="YES" id="Kgf-A9-VSQ"/>
+                                </connections>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xc0-05-6VT" customClass="MyCustomView" customModule="MiniGamesCircleView" customModuleProvider="target">
+                                <rect key="frame" x="90" y="90" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Boh-1c-GIY" appends="YES" id="kWg-ay-jC5"/>
+                                </connections>
+                            </view>
+                            <view tag="8" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N3H-Vy-QJz" customClass="MyCustomView" customModule="MiniGamesCircleView" customModuleProvider="target">
+                                <rect key="frame" x="193" y="813" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cDU-Lz-hmS" appends="YES" id="o1y-XT-rdm"/>
+                                </connections>
+                            </view>
+                            <view tag="9" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eoT-dJ-jRF" customClass="MyCustomView" customModule="MiniGamesCircleView" customModuleProvider="target">
+                                <rect key="frame" x="343" y="792" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Wos-kg-ho1" appends="YES" id="cu3-u0-kaD"/>
+                                </connections>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E4M-G4-lg7" customClass="MyCustomView" customModule="MiniGamesCircleView" customModuleProvider="target">
+                                <rect key="frame" x="244" y="172" width="10" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZhR-zK-ryL" appends="YES" id="VPC-eO-Ehy"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="customViewTag1" destination="Xc0-05-6VT" id="Kgr-RM-QYz"/>
+                        <outlet property="customViewTag2" destination="E4M-G4-lg7" id="ac6-k3-uQe"/>
+                        <outlet property="customViewTag3" destination="Grs-an-0ux" id="sHS-MF-Bv7"/>
+                        <outlet property="customViewTag4" destination="7Z8-vd-Zh1" id="FNk-fj-gvB"/>
+                        <outlet property="customViewTag5" destination="jp4-Na-xmI" id="Znd-Rl-AbY"/>
+                        <outlet property="customViewTag6" destination="O43-FS-sPU" id="67m-vW-qbi"/>
+                        <outlet property="customViewTag7" destination="0zC-Az-ZFW" id="o5z-uD-2oT"/>
+                        <outlet property="customViewTag8" destination="N3H-Vy-QJz" id="Ljq-gV-xDQ"/>
+                        <outlet property="customViewTag9" destination="eoT-dJ-jRF" id="PkZ-UU-ZFZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Boh-1c-GIY" userLabel="Pan Gesture Tag1">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="MwD-1r-wjL"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="dFS-o7-x56"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ZhR-zK-ryL" userLabel="Pan Gesture Tag2">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="Ip3-Ym-ss9"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="ic7-EE-7Tp"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="cdR-IP-Lll" userLabel="Pan Gesture Tag3">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="guu-hv-Rtv"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="bPK-6d-dko"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Flx-OB-IiT" userLabel="Pan Gesture Tag4">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="Aly-lN-hla"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="mu3-ze-ccd"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="0cT-Ax-UDv" userLabel="Pan Gesture Tag5">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="Jp3-BQ-pux"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="rvG-tM-Ge1"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Dgt-av-1rd" userLabel="Pan Gesture Tag6">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="Ahg-8H-S1K"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="FW5-Q3-YQk"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="uMu-QX-6QH" userLabel="Pan Gesture Tag7">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="GSv-tq-C63"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="cNF-g8-ick"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="cDU-Lz-hmS" userLabel="Pan Gesture Tag8">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="Lh4-8D-Xty"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="RdH-Nn-8wT"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Wos-kg-ho1" userLabel="Pan Gesture Tag9">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="P38-HL-PxQ"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="qYn-wM-7yv"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
