@@ -16,14 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Grs-an-0ux" customClass="MyCustomView" customModule="MiniGamesCircleView" customModuleProvider="target">
-                                <rect key="frame" x="87" y="309" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="cdR-IP-Lll" appends="YES" id="ARE-5d-yPf"/>
-                                </connections>
-                            </view>
                             <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Z8-vd-Zh1" customClass="MyCustomView" customModule="MiniGamesCircleView" customModuleProvider="target">
                                 <rect key="frame" x="42" y="494" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -55,7 +47,7 @@
                                 </connections>
                             </view>
                             <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xc0-05-6VT" customClass="MyCustomView" customModule="MiniGamesCircleView" customModuleProvider="target">
-                                <rect key="frame" x="90" y="90" width="60" height="60"/>
+                                <rect key="frame" x="70" y="72" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -82,6 +74,14 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ZhR-zK-ryL" appends="YES" id="VPC-eO-Ehy"/>
+                                </connections>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Grs-an-0ux" customClass="MyCustomView" customModule="MiniGamesCircleView" customModuleProvider="target">
+                                <rect key="frame" x="70" y="196" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cdR-IP-Lll" appends="YES" id="ARE-5d-yPf"/>
                                 </connections>
                             </view>
                         </subviews>

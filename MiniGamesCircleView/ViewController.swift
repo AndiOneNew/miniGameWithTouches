@@ -4,7 +4,6 @@
 //
 //  Created by Илья Новиков on 17.08.2021.
 //
-import Foundation
 import UIKit
 
 class ViewController: UIViewController, UIGestureRecognizerDelegate {
@@ -18,7 +17,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var customViewTag7: MyCustomView!
     @IBOutlet weak var customViewTag8: MyCustomView!
     @IBOutlet weak var customViewTag9: MyCustomView!
-    var arrayCustomViews =  [MyCustomView]()
+    var arrayCustomViews = [MyCustomView]()
+    let upSize = 10 //Число для увеличения размеров по ширине и величине
     
     
     override func viewDidLoad() {
@@ -33,20 +33,36 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         gestureView.center = CGPoint (x: gestureView.center.x + gestureTranslation.x , y: gestureView.center.y + gestureTranslation.y)
         gesture.setTranslation(.zero, in: view)
         guard gesture.state == .ended else { return }
-        levelUpForCustomView(gestureView)
+        
+//        Вызов функции сравнения границ фремов с передачей внутрь функции активной вью
+        let viewInterSected = self.checkFrameView(gestureView)
+        if viewInterSected {
+            let someView = arrayCustomViews.filter { $0.tag == gestureView.tag }.first
+            someView?.workingView.backgroundColor = .systemIndigo
+            someView?.workingView.frame.size.height += CGFloat(upSize)
+            someView?.workingView.frame.size.width += CGFloat(upSize)
+            someView?.workingView.layer.cornerRadius = someView!.workingView.frame.size.width / 2
+            removeViewFromArray()
+        }
     }
     
-    func levelUpForCustomView(_ vc: UIView) {
+//    Функция для сравнения фреймов вьюшек из массива и активной вьюшки
+    func checkFrameView(_ view: UIView) -> Bool {
         for value in arrayCustomViews {
-            if vc.tag != value.tag {
-                var r1 = (vc.frame.width) / 2
-                var r2 = value.frame.width / 2
-                var dist = pow(pow((vc.center.x - value.center.x), 2) + pow((vc.center.y - value.center.y), 2), 0.5)
-                if r1 + r2 >= dist {
+            if (!(view .isEqual(value))) {
+                if(view.frame.intersects(value.frame)) {
                     value.isHidden = true
-                    }
-            }  
+                    value.tag = 0
+                    arrayCustomViews.append(value)
+                    return true
+                }
+            }
         }
+        return false
+    }
+
+    func removeViewFromArray() {
+        arrayCustomViews.removeAll(where: {$0.tag == 0 })
     }
 }
 
