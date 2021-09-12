@@ -37,11 +37,16 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
 //        Вызов функции сравнения границ фремов с передачей внутрь функции активной вью
         let viewInterSected = self.checkFrameView(gestureView)
         if viewInterSected {
-            let someView = arrayCustomViews.filter { $0.tag == gestureView.tag }.first
-            someView?.workingView.backgroundColor = .systemIndigo
-            someView?.workingView.frame.size.height += CGFloat(upSize)
-            someView?.workingView.frame.size.width += CGFloat(upSize)
-            someView?.workingView.layer.cornerRadius = someView!.workingView.frame.size.width / 2
+            UIView.animate(withDuration: 1) {
+                let someView = self.arrayCustomViews.filter{$0.tag == gestureView.tag }.first
+                someView?.workingView.backgroundColor = .systemIndigo
+                someView?.transform = (someView?.transform.scaledBy(x: 1.2, y: 1.2))!
+            }
+//            let someView = arrayCustomViews.filter { $0.tag == gestureView.tag }.first
+//            someView?.workingView.backgroundColor = .systemIndigo
+//            someView?.workingView.frame.size.height += CGFloat(upSize)
+//            someView?.workingView.frame.size.width += CGFloat(upSize)
+//            someView?.workingView.layer.cornerRadius = someView!.workingView.frame.size.width / 2
             removeViewFromArray()
         }
     }
@@ -64,5 +69,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     func removeViewFromArray() {
         arrayCustomViews.removeAll(where: {$0.tag == 0 })
     }
+    
 }
 
